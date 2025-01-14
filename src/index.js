@@ -7,7 +7,7 @@ function updateTime() {
 
     tubingenDateElement.innerHTML = tubingenTime.format("MMMM Do YYYY");
     tubingenTimeElement.innerHTML = tubingenTime.format(
-      "h:mm ss [<small>]A[</small>]"
+      "h:mm[<small>]A[</small>]"
     );
   }
 
@@ -18,9 +18,7 @@ function updateTime() {
     let eufalaTime = moment().tz("America/North_Dakota/New_Salem");
 
     eufalaDateElement.innerHTML = eufalaTime.format("MMMM Do YYYY");
-    eufalaTimeElement.innerHTML = eufalaTime.format(
-      "h:mm ss[<small>]A[</small>]"
-    );
+    eufalaTimeElement.innerHTML = eufalaTime.format("h:mm[<small>]A[</small>]");
   }
 
   let eastlakeElement = document.querySelector("#eastlake");
@@ -31,7 +29,7 @@ function updateTime() {
 
     eastlakeDateElement.innerHTML = eastlakeTime.format("MMMM Do YYYY");
     eastlakeTimeElement.innerHTML = eastlakeTime.format(
-      "h:mm ss [<small>]A[</small>]"
+      "h:mm[<small>]A[</small>]"
     );
   }
 }
@@ -52,7 +50,7 @@ function updateCity(event) {
         <h2>${cityName}</h2>
         <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
       </div>
-      <div class="time">${cityTime.format("h:mm ss")}<small>${cityTime.format(
+      <div class="time">${cityTime.format("h:mm")}<small>${cityTime.format(
     "A"
   )}</small></div>
     </div>
