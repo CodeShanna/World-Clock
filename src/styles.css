@@ -24,9 +24,9 @@ footer {
     opacity: 70%;
 }
 .container {
-    max-width: 600px;
+    max-width: 80%px;
     display: block;
-    margin:60px auto;
+    margin:10%px auto;
     background-color:#455d7a;
     padding: 50px 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
